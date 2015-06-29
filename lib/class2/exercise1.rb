@@ -5,4 +5,4 @@
 # TIP: I expect you to use a mathematical equation.
 puts 'stuff'
 
-Test TEST
+Test
