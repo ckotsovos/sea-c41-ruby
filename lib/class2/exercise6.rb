@@ -9,3 +9,9 @@
 #   CAN'T YOU SEE I'M BUSY?! MAKE IT FAST, JOHNSON!
 #   i want a raise
 #   WHADDAYA MEAN 'I WANT A RAISE'?!? YOU'RE FIRED!!
+
+puts "WHAT THE HELL DO YOU WANT?"
+angry_boss = gets.chomp
+angry_boss.upcase!
+
+puts "WHAT!? YOU WANT '#{angry_boss}', YOU'RE FIRED"
