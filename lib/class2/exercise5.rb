@@ -9,3 +9,11 @@
 #   What's your favorite number?
 #   42
 #   That's ok, I guess, but isn't 43 just a bit better?
+puts "What's your favorite number?"
+user_number = gets.chomp
+
+def add_a_number(number)
+  number = user_number
+return number
+end
+puts " Well #{add_a_number} , is my favorite number"
