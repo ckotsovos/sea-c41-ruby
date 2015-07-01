@@ -13,7 +13,8 @@ puts "What's your favorite number?"
 user_number = gets.chomp
 
 def add_a_number(number)
-  number = user_number
-return number
+  number + 1
 end
-puts " Well #{add_a_number} , is my favorite number"
+puts " Well #{add_a_number(user_number)} , is my favorite number"
+
+add_a_number(user_number)
