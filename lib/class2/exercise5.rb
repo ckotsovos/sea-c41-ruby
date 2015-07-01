@@ -10,7 +10,7 @@
 #   42
 #   That's ok, I guess, but isn't 43 just a bit better?
 puts "What's your favorite number?"
-user_number = gets.chomp
+user_number = gets.chomp.to_i
 
 def add_a_number(number)
   number + 1
