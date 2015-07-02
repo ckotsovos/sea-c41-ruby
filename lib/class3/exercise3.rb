@@ -38,7 +38,17 @@ total_attempts = 3
 
 until response == 'BYE' || attempts == total_attempts
 
-  if response == 0
+if attempts == 'BYE'
+
+  puts "Nana: HOW'S SCHOOL GOING?"
+
+  attempts += 1
+
+else
+
+  attempts = 1
+
+  if response == 'BYE'
 
     puts 'Nana: HI SWEETIE! GIVE NANA A KISS!'
 
@@ -47,8 +57,10 @@ until response == 'BYE' || attempts == total_attempts
     puts 'Nana: HUH?! SPEAK UP, SWEETIE!'
 
   else
+
     puts "Nana: NOT SINCE #{rand(1930..2015)}!"
 
+    end
   end
 
   response = gets.chomp
