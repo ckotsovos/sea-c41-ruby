@@ -36,7 +36,7 @@ response = 0
 attempts = 1
 total_attempts = 3
 
-until response == 'BYE' || attempts == total_attempts
+until response == 'BYE' && attempts == total_attempts
 
   if attempts == 'BYE'
 
