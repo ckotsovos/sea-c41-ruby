@@ -69,14 +69,14 @@ until response == 'BYE'
     puts 'Nana: HUH?! SPEAK UP, SWEETIE!'
 
   else
-    puts "Nana: NOT SINCE #{rand1930..2015}!"
+    puts "Nana: NOT SINCE #{rand(1930..2015)}!"
 
   end
 
   response = gets.chomp
 end
 
-puts 'Nana: BYE SWEETIE!'
+puts 'Nana: BYE SWEETIE! Make sure you eat something!'
 
 
 
