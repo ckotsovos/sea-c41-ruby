@@ -28,11 +28,14 @@
 #
 #     Returns a new String of length Integer with `string` right justified.
 #
-#     'bird'.rjust(10)  #=> '      bird'
+#     'bird'.rjust(10)  #=> '      bird
+line_len = 50
+puts 'Table of Contents'.center(line_len)
+puts 'Chapter 1: Getting Started'.ljust(line_len - 7) + 'page 1'
+puts 'Chapter 2: Numbers'.ljust(line_len - 7) + 'page 9'
+puts 'Chapter 3: Letters'.ljust(line_len - 7) + 'page 13'
 
-line_width = 50
-puts('Table of Contents', center_width)
-puts('Chapter 1: Getting Started', 'page 1', line_width)
-puts('Chapter 2: Numbers', 'page 9',  line_width)
-puts('Chapter 3: Letters', 'page 13', line_width)
-
+#How this code works: By subtracting "7" using .ljust(ADJUSTING to the left)
+#You're telling the code that that each "line_len" should be move from 50 center to 43
+#left. Also when doing "+ page" it automatically move to the far right unless
+#you specify the exact positioning.
