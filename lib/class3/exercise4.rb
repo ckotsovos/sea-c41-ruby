@@ -8,3 +8,21 @@
 # divisible by 400 (e.g. 2000).
 #
 # TIP: I expect you to use a loop and a few modulo operations.
+
+start_year = 1900
+
+final_year = 2000
+
+def leap(year)
+
+    year /= 100 if year % 100 == 0    # /= Was the key to solving this riddle.
+
+  year % 4 == 0
+
+end
+
+puts (start_year..final_year).find_all{ |year| leap(year) }
+
+#find_all wasn't suppose to work, but it worked 0_o.
+
+#Doing reasearch online, RUBY has a .leap operator, but wouldn't have worked for this assignment.
