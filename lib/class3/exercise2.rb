@@ -64,6 +64,10 @@ until response == 'BYE'
 
     puts 'Nana: HI SWEETIE! GIVE NANA A KISS!'
 
+  elsif response != response.upcase
+
+    puts 'Nana: HUH?! SPEAK UP, SWEETIE!'
+
   end
 
   response = gets.chomp
