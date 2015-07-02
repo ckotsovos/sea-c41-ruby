@@ -16,9 +16,7 @@
 #   Go to the store and buy some more, 3 bottles of beer on the wall!
 #
 # TIP: I expect you to use a loop.
-
 puts '3 bottles of beer on the wall, 3 bottles of beer! Take one down, pass it around, how many bottles of beer on the wall!'
-many = gets.chomp
 
 if many = 2
   puts('bottles of beer on the wall, 2 bottles of beer!')
@@ -27,3 +25,4 @@ else
   puts('try again')
   end
 end
+
