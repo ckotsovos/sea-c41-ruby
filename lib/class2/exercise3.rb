@@ -2,4 +2,7 @@
 #
 # If a person is 1,160,000,000 seconds old, display their age in years. As
 # always, assume leap years don't exist.
-puts(1160000000 / 31557600)
+puts(1_160_000_000 / 31_557_600)
+
+#ALTERNATE SOLUTION
+#puts 1_160_000_000 / 60 / 60 / 24 / 365 /
