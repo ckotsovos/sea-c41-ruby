@@ -18,3 +18,8 @@ end
 puts " Well #{add_a_number(user_number)} , is my favorite number"
 
 add_a_number(user_number)
+
+#ALTERNATE SOLUTION
+#puts "What's your favorite number?"
+#favorite = gets.chomp.to_i
+#puts 'That's ok, I guess, but isn't #{favorite + 1}
