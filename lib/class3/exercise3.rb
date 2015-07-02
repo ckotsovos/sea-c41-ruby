@@ -44,7 +44,7 @@ until response == 'BYE' && trys == total_trys
 
   trys += 1
 
-else
+  else
 
   trys = 1
 
@@ -60,7 +60,7 @@ else
 
     puts "Nana: NOT SINCE #{rand(1930..2015)}!"
 
-    end
+  end
   end
 
   response = gets.chomp

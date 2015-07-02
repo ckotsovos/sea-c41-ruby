@@ -23,6 +23,6 @@ end
 
 puts (start_year..final_year).find_all{ |year| leap(year) }
 
-#find_all wasn't suppose to work, but it worked 0_o.
+#find_all wasn't suppose tp work 0_o
 
 #Doing reasearch online, RUBY has a .leap operator, but wouldn't have worked for this assignment.

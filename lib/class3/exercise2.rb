@@ -77,7 +77,3 @@ until response == 'BYE'
 end
 
 puts 'Nana: BYE SWEETIE! Make sure you eat something!'
-
-
-
-
