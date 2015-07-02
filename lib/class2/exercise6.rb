@@ -15,3 +15,8 @@ angry_boss = gets.chomp
 angry_boss.upcase!
 
 puts "WHAT!? YOU WANT '#{angry_boss}', YOU'RE FIRED"
+
+#ALTERNATE SOLUTION
+#puts "WHAT THE HELL DO YOU WANT?"
+#angry_boss = gets.chomp.upcase
+#puts "WHAT!? YOU WANT '#{angry_boss}', YOU'RE FIRED"
