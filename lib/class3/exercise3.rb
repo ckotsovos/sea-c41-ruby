@@ -32,3 +32,24 @@
 #   Nana: HOW'S SCHOOL GOING?
 #   BYE
 #   Nana: BYE SWEETIE!
+response = 0
+attempts = 3
+until response == 'BYE' + attempts
+
+  if response == 0
+
+    puts 'Nana: HI SWEETIE! GIVE NANA A KISS!'
+
+  elsif response != response.upcase
+
+    puts 'Nana: HUH?! SPEAK UP, SWEETIE!'
+
+  else
+    puts "Nana: NOT SINCE #{rand(1930..2015)}!"
+
+  end
+
+  response = gets.chomp
+end
+
+puts 'Nana: BYE SWEETIE! Make sure you eat something!'
