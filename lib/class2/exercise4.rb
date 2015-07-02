@@ -27,3 +27,13 @@ last_name = gets.chomp
 last_name.capitalize!
 
 puts "Welcome #{first_name} #{middle_name} #{last_name}, to Cyberdyne Systems"
+
+
+#ALTERNATE SOLUTION (.map) method.
+# name = ['first', 'middle', 'last'].map do |e|
+#OR
+# name = %w (first middle last).map do |e|
+#puts "What's your #{e} name?"
+# get.chomp
+#end
+#puts "Nice to meet you, #{name.join("-")}"
