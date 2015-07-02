@@ -33,19 +33,20 @@
 #   BYE
 #   Nana: BYE SWEETIE!
 response = 0
-attempts = 1
-total_attempts = 3
+trys = 1
+total_trys = 3
 
-until response == 'BYE' && attempts == total_attempts
+until response == 'BYE' && trys == total_trys
 
-  if attempts == 'BYE'
+  if response == 'BYE'
 
     puts "Nana: HOW'S SCHOOL GOING?"
 
-    attempts += 1
+  trys += 1
+
 else
 
-  attempts = 1
+  trys = 1
 
   if response == 0
 
@@ -57,13 +58,12 @@ else
 
   else
 
-    puts "Nana: NOT SINCE #{rand(1930..3000)}!"
+    puts "Nana: NOT SINCE #{rand(1930..2015)}!"
 
+    end
   end
 
-end
-
-response = gets.chomp
+  response = gets.chomp
 
 end
 
