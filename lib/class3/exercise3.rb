@@ -33,8 +33,10 @@
 #   BYE
 #   Nana: BYE SWEETIE!
 response = 0
-attempts = 3
-until response == 'BYE' + attempts
+attempts = 1
+total_attempts = 3
+
+until response == 'BYE' || attempts == total_attempts
 
   if response == 0
 
