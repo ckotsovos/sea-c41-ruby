@@ -37,3 +37,6 @@ def ask(question)
 end
 
 puts ask('Do you like eating tacos? (y or n)')
+question = gets.chomp
+question.downcase!
+
