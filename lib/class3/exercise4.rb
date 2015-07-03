@@ -26,3 +26,8 @@ puts (start_year..final_year).find_all{ |year| leap(year) }
 #find_all wasn't suppose tp work 0_o
 
 #Doing reasearch online, RUBY has a .leap operator, but wouldn't have worked for this assignment.
+
+#Charlie Crawford Method
+#1904.upto(2000) do |n|
+#   puts n if n % 4 == 0
+#end
