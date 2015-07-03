@@ -30,7 +30,6 @@ hits = [
   "Ready Or Not        The Fugees                1996"]
 
   puts (hits[0].center(line_width))
-  puts
   puts (hits[1].ljust(line_width/2))
   puts (hits[2].ljust(line_width/2))
   puts (hits[3].ljust(line_width/2))
