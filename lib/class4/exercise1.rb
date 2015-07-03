@@ -35,3 +35,13 @@
 #     Returns a new Array created by sorting `array`.
 #
 #     ['cat', 'bird'].sort  #=> ['bird', 'cat']
+
+puts "Type some words to be sorted alphabetically:"
+
+magic = Array.new
+while (userInput = gets.chomp) != ''
+   magic.push(userInput)
+end
+
+puts "Sweet! Here they are in alphabetical order:"
+puts magic.sort
