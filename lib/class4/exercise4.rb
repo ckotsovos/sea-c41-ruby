@@ -27,12 +27,58 @@
 # TIP #3: You only need to change the `old_school_roman_numeral` method.
 
 # rubocop:disable MethodLength
-def old_school_roman_numeral(num)
-  num # change me
+def Old_Roman_Numerals number #THANKS SATAN, for such a stress inducing exercise.
+  m_length = 0
+  d_length = 0
+  c_length = 0
+  l_length = 0
+  x_length = 0
+  v_length = 0
+  i_length = 0
+
+  if number >= 1000           #Is this unconventional? Yes. Does it work? Yes.
+    m_length = number / 1000
+    number = number % 1000
 end
 
-input = ARGV[0].to_i
+  if number >= 500
+    d_length = number / 500
+    number = number % 500
+end
 
-abort 'Usage: exercise4.rb [1-1000]' unless input.between?(1, 1000)
+  if number >= 100
+    c_length = number / 100
+    number = number % 100
+end
 
-puts old_school_roman_numeral(input)
+  if number >= 50
+    l_length = number / 50
+    number = number % 50
+end
+
+  if number >= 10
+    x_length = number / 10
+    number = number % 10
+end
+
+  if number >= 5
+    v_length = number / 5
+    number = number % 5
+end
+
+  if number < 5
+    i_length = number / 1
+    number = number % 10
+end
+
+puts 'M'*m_length +   # Prefer clean order list vs. one long code line.
+     'D'*d_length +
+     'C'*c_length +
+     'L'*l_length +
+     'X'*x_length +
+     'V'*v_length +
+     'I'*i_length
+end
+
+puts "#{Old_Roman_Numerals 2015}MGM Production" # I miss MGM, now SONY owns it.
+

@@ -33,7 +33,17 @@
 # TIP #2: Use `return` to preemptively exit the `ask` method.
 
 def ask(question)
-  question # change me
+  loop do          #Glad Charlie mentioned "loop do" in class on block repeating.
+    puts question
+
+    answer = gets.chomp
+
+    return "Get OUT of my sight!" if answer == 'n'
+
+    return "We can be FRIENDS!" if answer == 'y'
+
+    puts "Please Try again"
+end
 end
 
 puts ask('Do you like eating tacos? (y or n)')
