@@ -70,7 +70,7 @@
 #       '/Users/tim/sea-c21-ruby/lib/class5/'
 
 def database
-  '/change/me'
+  File.dirname('/Users/tim/sea-c21-ruby/lib/class5/database.yml')
 end
 
 puts database
