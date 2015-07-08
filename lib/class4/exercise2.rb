@@ -35,3 +35,10 @@ hits = [
   puts (hits[3].ljust(line_width/2))
   puts (hits[5].ljust(line_width/2))
   puts (hits[6].ljust(line_width/2))
+
+=begin Charlie Crawford Method
+info.each do |artist, song, year|
+  puts artist.ljust(20) + song.ljust(26) + year
+end
+=end
+

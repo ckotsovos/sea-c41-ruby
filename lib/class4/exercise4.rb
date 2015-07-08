@@ -82,3 +82,28 @@ end
 
 puts "#{Old_Roman_Numerals 2015}MGM Production" # I miss MGM, now SONY owns it.
 
+#Charlie Crawford Correct Method
+=begin
+
+rescue Exception => e
+
+end
+roman_nmuerals = {
+  1000 => 'M'
+  500 => 'D'
+  100 => 'C'
+  50 => 'L'
+  10 => 'X'
+  5 => 'V'
+  1 => 'I'
+}
+
+
+roman_numerals.keys.reduce('') do |result, divisor|
+  while num / divisor > 0 && num > )
+  result += roman_numerals[divisor]
+  num -= divisor
+end
+result
+
+=end
