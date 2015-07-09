@@ -26,18 +26,18 @@
 require 'yaml'
 
 def database
-  '/replace/me'
+  File.absolute_path(File.dirname(__FILE__) + '/database.yml')
 end
 
 def load
-  ['replace me']
+  [YAML.load(File.read(database))]
 end
 
 def find(id)
-  id # fix me
+  load[id - 2]
 end
 
-input = ARGV[0].to_i
+input = ARGV[0].to_i #When in terminal "ruby exercise5.rb 2" will give the database.
 
 abort 'Usage: exercise5.rb POSITIVE_INTEGER' unless input > 0
 
