@@ -22,15 +22,15 @@
 require 'yaml'
 
 def database
-  '/replace/me'
+  File.absolute_path(File.dirname(__FILE__) + '/database.yml')
 end
 
 def load
-  { replace: 'me' }
+  YAML.load(File.read(database))
 end
 
 def update(key, value)
-  key + value # fix me
+  load[key,value,.to_sym]
 end
 
 input1, input2 = ARGV
