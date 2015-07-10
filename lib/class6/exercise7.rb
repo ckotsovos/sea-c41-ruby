@@ -23,15 +23,15 @@
 require 'yaml'
 
 def database
-  '/replace/me'
+  File.absolute_path(File.dirname(__FILE__) + '/database.yml')
 end
 
 def load
-  { replace: 'me' }
+  YAML.load(File.read(database)) #Remove [ ], caused code to stop functioning
 end
 
 def remove(key)
-  key # fix me
+  load.delete key.to_sym
 end
 
 input = ARGV[0]
