@@ -30,7 +30,7 @@ def load
 end
 
 def update(key, value)
-  load[key.to_sym].merge(value)
+  load[key.to_sym] = [value]
 end
 
 input1, input2 = ARGV
