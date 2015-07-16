@@ -22,3 +22,9 @@ def database
 end
 
 puts database
+
+=begin
+OR
+
+("#{File.dirname(__FILE__)}/database.yml")
+end
