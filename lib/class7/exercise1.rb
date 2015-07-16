@@ -47,29 +47,30 @@
 
 class Integer
   def hours_in_seconds
-    # replace me
+    self * 60 * 60
   end
 end
 
 class String
   def indent(amount = 2)
-    amount # replace me
+    '' * amount + self
   end
 end
 
 class Integer
   # rubocop:disable MethodLength
   def to_roman
-    # replace me
+    # I HAVE NO EARTHLY IDEA HOW TO DO THIS. :S SORRY
+
   end
 end
 
 class Array
   def second
-    # replace me
+    self[1]
   end
 
   def third
-    # replace me
+    seld[2]
   end
 end
