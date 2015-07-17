@@ -32,13 +32,8 @@ end
     @fruit
 end
 
- def pick! (amount = 1)
-  return nil if fruit < amount
-  self.fruit -= amount
+  def pick!(amount = 1)
+    @fruit -= if fruit >= amount
 end
 end
 end
-
-
-
-
